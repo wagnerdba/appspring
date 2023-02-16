@@ -13,10 +13,11 @@ public class AppspringApplication {
 	}
 	
 	@PostConstruct
-	public void init(){
+	public void init() {
+		
 		// Setting Spring Boot SetTimeZone
 		log.info(String.valueOf(ZoneId.systemDefault()));
 		TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
-		log.info(String.valueOf(ZoneId.systemDefault()));	
-
+		log.info(String.valueOf(ZoneId.systemDefault()));
+       {
 }

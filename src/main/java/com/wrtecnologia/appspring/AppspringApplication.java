@@ -6,6 +6,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @EnableScheduling
+@Slf4j
 public class AppspringApplication {
 
 	public static void main(String[] args) {

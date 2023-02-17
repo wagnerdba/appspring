@@ -23,7 +23,7 @@ public class AppspringApplication {
 
         // Setting Spring Boot SetTimeZone
         log.info(String.valueOf(ZoneId.systemDefault()));
-        TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
+        TimeZone.setDefault(TimeZone.getTimeZone("America/Sao_Paulo"));
         log.info(String.valueOf(ZoneId.systemDefault()));
     }
 }

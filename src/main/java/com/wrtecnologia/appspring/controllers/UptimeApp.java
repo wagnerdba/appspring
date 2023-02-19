@@ -29,7 +29,7 @@ public class UptimeApp {
 
         long millis = System.currentTimeMillis() - start;
 
-        String uptime = String.format("%03d:%02d:%02d:%02d", TimeUnit.MILLISECONDS.toDays(millis),
+        String uptime = String.format("%03d days %02d hours %02d minutes %02d seconds", TimeUnit.MILLISECONDS.toDays(millis),
                                                              TimeUnit.MILLISECONDS.toHours(millis) - TimeUnit.DAYS.toHours(TimeUnit.MILLISECONDS.toDays(millis)),
                                                              TimeUnit.MILLISECONDS.toMinutes(millis) - TimeUnit.HOURS.toMinutes(TimeUnit.MILLISECONDS.toHours(millis)),
                                                              TimeUnit.MILLISECONDS.toSeconds(millis) - TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millis)));
@@ -45,6 +45,6 @@ public class UptimeApp {
                 "<strong><font color=\"black\" face=\"Courier\" size=\"2\"><br>Start in..........: </strong>" + appHealth.startapp + "</font>" +
                 "<strong><font color=\"black\" face=\"Courier\" size=\"2\"><br>Uptime............:</strong> %s", uptime) + "</font><br>" +
                 "<strong><font color=\"black\" face=\"Courier\" size=\"2\">Next execution job: </strong>" + diversosJobsDateTime.next() + "</font></p>" +
-                "<p><strong><font color=\"black\" face=\"Courier\" size=\"2\">by Wagner Pires (dev)</font></strong></p>";
+                "<p><strong><font color=\"black\" face=\"Courier\" size=\"2\">by Wagner Pires (dev) - wagnerdba@gmail.com</font></strong></p>";
     }
 }

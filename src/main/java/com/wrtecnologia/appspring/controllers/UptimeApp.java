@@ -42,8 +42,8 @@ public class UptimeApp {
         return String.format(
                 "<p><strong><font color=\"#ff3399\" face=\"Courier\" size=\"3\">Railway App Server (AppspringApplication)</strong></p>" +
                 "<p><strong><font color=\"blue\" face=\"Courier\" size=\"2\">Server date/time..: </strong>" + date.format(formatter) + "</font>" +
-                "<strong><font color=\"black\" face=\"Courier\" size=\"2\"><br>Start in..........: </strong>" + appHealth.startapp + "</font>" +
-                "<strong><font color=\"black\" face=\"Courier\" size=\"2\"><br>Uptime............:</strong> %s", uptime) + "</font><br>" +
+                "<strong><font color=\"black\" face=\"Courier\" size=\"2\"><br>Uptime............:</strong> %s", uptime) + "</font>" +
+                "<strong><font color=\"black\" face=\"Courier\" size=\"2\"><br>App started in....: </strong>" + appHealth.startapp + "</font><br>" +
                 "<strong><font color=\"black\" face=\"Courier\" size=\"2\">Next execution job: </strong>" + diversosJobsDateTime.next() + "</font></p>" +
                 "<p><strong><font color=\"black\" face=\"Courier\" size=\"2\">by Wagner Pires (dev) - wagnerdba@gmail.com</font></strong></p>";
     }
